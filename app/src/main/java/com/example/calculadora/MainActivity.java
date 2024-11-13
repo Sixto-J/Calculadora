@@ -20,4 +20,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-/* En manifest: android:theme="@style/Theme.AppCompat.Light.NoActionBar" */
+/* En manifest: android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="8dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+*/
