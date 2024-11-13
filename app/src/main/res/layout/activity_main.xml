@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/grid1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:columnCount="4"
-    android:orientation="horizontal"
-    tools:context=".MainActivity">
+    android:orientation="horizontal">
 
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <Button
+        android:layout_column="3"
+        android:text="/" />
 
     <Button android:text="1" />
 
@@ -17,11 +28,15 @@
 
     <Button android:text="3" />
 
+    <Button android:text="*" />
+
     <Button android:text="4" />
 
     <Button android:text="5" />
 
     <Button android:text="6" />
+
+    <Button android:text="-" />
 
     <Button android:text="7" />
 
@@ -29,23 +44,20 @@
 
     <Button android:text="9" />
 
+    <Button
+        android:layout_rowSpan="3"
+        android:layout_gravity="fill"
+        android:text="+" />
+
+    <Button
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+        android:text="0" />
+
     <Button android:text="00" />
 
     <Button
-        android:layout_rowSpan="3"
-        android:text="+" />
-
-    <Button android:text="-" />
-
-    <Button android:text="*" />
-
-    <Button
-        android:layout_column="3"
-        android:text="/" />
-
-    <Button
         android:layout_columnSpan="3"
+        android:layout_gravity="fill"
         android:text="=" />
-
-
 </GridLayout>

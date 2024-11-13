@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.example.calculadora'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.example.calculadora"
         minSdk 25
-        targetSdk 34
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -37,4 +37,9 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
+
+    implementation "androidx.constraintlayout:constraintlayout:2.2.0-beta01"
+        // To use constraintlayout in compose
+    implementation "androidx.constraintlayout:constraintlayout-compose:1.1.0-beta01"
+
 }
